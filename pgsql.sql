@@ -1,3 +1,66 @@
+-- SEQUENCE: wf_vcg_db.t_can_master_can_id_seq
+
+-- DROP SEQUENCE IF EXISTS wf_vcg_db.t_can_master_can_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS wf_vcg_db.t_can_master_can_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY t_can_master.can_id;
+
+ALTER SEQUENCE wf_vcg_db.t_can_master_can_id_seq
+    OWNER TO postgres;
+
+-- SEQUENCE: wf_vcg_db.t_card_network_network_id_seq
+
+-- DROP SEQUENCE IF EXISTS wf_vcg_db.t_card_network_network_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS wf_vcg_db.t_card_network_network_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY t_card_network.network_id;
+
+ALTER SEQUENCE wf_vcg_db.t_card_network_network_id_seq
+    OWNER TO postgres;
+
+-- SEQUENCE: wf_vcg_db.t_pan_master_pan_id_seq
+
+-- DROP SEQUENCE IF EXISTS wf_vcg_db.t_pan_master_pan_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS wf_vcg_db.t_pan_master_pan_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY t_pan_master.pan_id;
+
+ALTER SEQUENCE wf_vcg_db.t_pan_master_pan_id_seq
+    OWNER TO postgres;
+
+-- SEQUENCE: wf_vcg_db.t_vc_binrange_bin_range_id_seq
+
+-- DROP SEQUENCE IF EXISTS wf_vcg_db.t_vc_binrange_bin_range_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS wf_vcg_db.t_vc_binrange_bin_range_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY t_vc_binrange.bin_range_id;
+
+ALTER SEQUENCE wf_vcg_db.t_vc_binrange_bin_range_id_seq
+    OWNER TO postgres;
+
+
+
+
 -- Table: wf_vcg_db.t_can_master
 
 -- DROP TABLE IF EXISTS wf_vcg_db.t_can_master;
